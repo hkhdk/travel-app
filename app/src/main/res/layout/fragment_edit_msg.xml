@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentEditMsg">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="个人资料"
+       android:gravity="center"
+       android:textColor="@color/white"
+       android:background="@color/red"
+       android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="修改昵称"
+        android:imeOptions="actionDone"
+        android:singleLine="true"/>
+    <Button
+        android:id="@+id/edit_head_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更改头像"
+        android:gravity="center"
+        android:background="@color/grey"/>
+
+    <ImageView
+        android:id="@+id/qr_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"/>
+
+</LinearLayout>

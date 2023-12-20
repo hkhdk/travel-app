@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户登录"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+        <EditText
+            android:id="@+id/lg_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:drawablePadding="5dp"
+            android:hint="账号"
+            android:singleLine="true"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/lg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lg_username"
+            android:layout_marginTop="10dp"
+            android:hint="密码"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:id="@+id/ly"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lg_password"/>
+
+        <Button
+            android:id="@+id/lg_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ly"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="登录"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="#FB3765"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lg_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:text="没有账号？立即注册"
+        android:textColor="#000000"/>
+
+</LinearLayout>
+
